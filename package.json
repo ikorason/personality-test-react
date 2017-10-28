@@ -1,0 +1,33 @@
+{
+  "name": "personality_test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "animejs": "^2.2.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-chartjs": "^0.8.0",
+    "react-dom": "^16.0.0",
+    "react-modal": "^3.0.3",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.14",
+    "recharts": "^1.0.0-alpha.6",
+    "styled-components": "^2.2.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "https://irfanabliz.github.io/react-personality-test",
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
+  }
+}
