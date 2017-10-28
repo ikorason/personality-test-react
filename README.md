@@ -12,4 +12,5 @@ Created with [Create React App](https://github.com/facebookincubator/create-reac
 
 
 #NOTE
+
 This application is still in progress, as I learned more about react I will add more features into it.
