@@ -11,6 +11,6 @@ The design is mainly inspired by this great post from [Lubos in Codepen](https:/
 Created with [Create React App](https://github.com/facebookincubator/create-react-app)
 
 
-#NOTE
+# NOTE
 
 This application is still in progress, as I learned more about react I will add more features into it.
