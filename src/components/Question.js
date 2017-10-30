@@ -39,10 +39,14 @@ class Question extends Component {
           D: 10
         },
         Briggs: {
-          EI: 10,
-          SN: 10,
-          TF: 10,
-          JP: 10
+          E: 5,
+          I: 5,
+          S: 5,
+          N: 5,
+          T: 5,
+          F: 5,
+          J: 5,
+          P: 5
         }
       },
       resultBriggs: '',
@@ -113,12 +117,24 @@ class Question extends Component {
   //                        get results
   // ===========================================================================
   getBriggsResults() {
-    const answersCount = this.state.answersCount
-    const briggsAnswer = answersCount['Briggs']
+    const answerCount = this.state.answersCount
+    const briggsAnswer = answerCount['Briggs']
     const answersCountKeysBriggs = Object.keys(briggsAnswer)
     const answersCountValuesBriggs = answersCountKeysBriggs.map(key => briggsAnswer[key])
-    const maxAnswerCountBriggs = Math.max.apply(null, answersCountValuesBriggs)
-    return answersCountKeysBriggs.filter(key => briggsAnswer[key] === maxAnswerCountBriggs)
+    let briggsType = ''
+    if (briggsAnswer.E >= briggsAnswer.I) {
+      briggsType += 'E'
+    } else briggsType += 'I'
+    if (briggsAnswer.S >= briggsAnswer.N) {
+      briggsType += 'S'
+    } else briggsType += 'N'
+    if (briggsAnswer.T >= briggsAnswer.F) {
+      briggsType += 'T'
+    } else briggsType += 'F'
+    if (briggsAnswer.J >= briggsAnswer.P) {
+      briggsType += 'J'
+    } else briggsType += 'P'
+    return briggsType
   }
 
   getColorsResults() {
@@ -150,7 +166,7 @@ class Question extends Component {
       this.setState({ resultLetters: resultLetters[0] })
     }
     if (resultBriggs.length >= 1) {
-      this.setState({ resultBriggs: resultBriggs[0] })
+      this.setState({ resultBriggs: resultBriggs })
     }
   }
 

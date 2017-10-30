@@ -59,6 +59,7 @@ export const Wrapper = styled.div.attrs({
       flex-direction: row;
       flex-grow: 1;
       .list-group-item {
+        text-align: center;
         width: 30%;
         .icon {
           display: inline-block;
