@@ -115,7 +115,7 @@ export const CardDef = styled.div.attrs({
   }
   .close {
     position: absolute;
-    left: 5%;
+    left: 3%;
     top: 2%;
     color: #fff;
     text-shadow: none;

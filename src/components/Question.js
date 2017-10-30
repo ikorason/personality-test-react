@@ -50,7 +50,7 @@ class Question extends Component {
       resultLetters: ''
     }
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this)
-  } // end - constructor()
+  }
 
   // populate app’s state using the componentWillMount life cycle event
   componentWillMount() {
@@ -59,9 +59,9 @@ class Question extends Component {
       question: quizQuestions[0].question,
       answerOptions: answerOptions[0]
     })
-  } // end - componentWillMount()
+  }
 
-  // Setting the answer based on the user’s selection
+  // setting the answer based on the user’s selection
   setUserAnswer(answer) {
     const answersCount = this.state.answersCount
     let applyAnswer = answer => {
@@ -84,7 +84,7 @@ class Question extends Component {
       answersCount: applyAnswer(answer),
       answer: answer
     })
-  } // setUserAnswer
+  }
 
   // increment the counter and questionId state
   setNextQuestion() {
@@ -97,7 +97,7 @@ class Question extends Component {
       answerOptions: quizQuestions[counter].answers,
       answer: ''
     })
-  } // setNextQuestion()
+  }
 
   // setting the answer and then setting the next question
   handleAnswerSelected(event) {
@@ -190,8 +190,6 @@ class Question extends Component {
     let resultBriggs = this.state.resultBriggs
     if (resultBriggs) {
       return this.renderResult()
-    } else {
-      this.renderQuiz()
     }
     return (
       <Wrapper className="container">

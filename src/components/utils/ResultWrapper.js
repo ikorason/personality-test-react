@@ -55,5 +55,17 @@ export const Wrapper = styled.div.attrs({
         right: 5%;
       }
     }
+    &.briggs {
+      flex-direction: row;
+      flex-grow: 1;
+      .list-group-item {
+        width: 30%;
+        .icon {
+          display: inline-block;
+          position: absolute;
+          right: 5%;
+        }
+      }
+    }
   }
 `
