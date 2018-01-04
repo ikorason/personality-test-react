@@ -26,7 +26,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://irfanabliz.github.io/react-personality-test",
+  "homepage": "https://irfanabliz.github.io/personality-test-react",
   "devDependencies": {
     "gh-pages": "^1.0.0"
   }
