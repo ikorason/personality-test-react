@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   justify-content: center;
 `
 
-export const ISTJ = ({ title, content, onBackClick }) => {
+export const SLI = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -25,7 +25,7 @@ export const ISTJ = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ISFJ = ({ title, content, onBackClick }) => {
+export const SEI = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -39,7 +39,7 @@ export const ISFJ = ({ title, content, onBackClick }) => {
   )
 }
 
-export const INFJ = ({ title, content, onBackClick }) => {
+export const IEI = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -53,7 +53,7 @@ export const INFJ = ({ title, content, onBackClick }) => {
   )
 }
 
-export const INTJ = ({ title, content, onBackClick }) => {
+export const ILI = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -67,7 +67,7 @@ export const INTJ = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ISTP = ({ title, content, onBackClick }) => {
+export const LSI = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -81,7 +81,7 @@ export const ISTP = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ISFP = ({ title, content, onBackClick }) => {
+export const ESI = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -95,7 +95,7 @@ export const ISFP = ({ title, content, onBackClick }) => {
   )
 }
 
-export const INFP = ({ title, content, onBackClick }) => {
+export const EII = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -109,7 +109,7 @@ export const INFP = ({ title, content, onBackClick }) => {
   )
 }
 
-export const INTP = ({ title, content, onBackClick }) => {
+export const LII = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -123,7 +123,7 @@ export const INTP = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ESTP = ({ title, content, onBackClick }) => {
+export const SLE = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -137,7 +137,7 @@ export const ESTP = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ESFP = ({ title, content, onBackClick }) => {
+export const SEE = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -151,7 +151,7 @@ export const ESFP = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ENFP = ({ title, content, onBackClick }) => {
+export const IEE = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -165,7 +165,7 @@ export const ENFP = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ENTP = ({ title, content, onBackClick }) => {
+export const ILE = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -179,7 +179,7 @@ export const ENTP = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ESTJ = ({ title, content, onBackClick }) => {
+export const LSE = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -193,7 +193,7 @@ export const ESTJ = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ESFJ = ({ title, content, onBackClick }) => {
+export const ESE = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -207,7 +207,7 @@ export const ESFJ = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ENFJ = ({ title, content, onBackClick }) => {
+export const EIE = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -221,7 +221,7 @@ export const ENFJ = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ENTJ = ({ title, content, onBackClick }) => {
+export const LIE = ({ title, content, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>

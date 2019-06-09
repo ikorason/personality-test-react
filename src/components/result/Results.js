@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import Colors from '../result/Colors'
-import Letters from '../result/Letters'
-import Briggs from '../result/Briggs'
+import Sociotype from './Sociotype'
 
 class Results extends Component {
   constructor(props) {
@@ -14,16 +12,8 @@ class Results extends Component {
     this._onNextClick = this._onNextClick.bind(this)
   }
 
-  renderResultColors() {
-    return <Colors resultColors={this.props.resultColors} _onNextClick={this._onNextClick} />
-  }
-
-  renderResultLetters() {
-    return <Letters resultLetters={this.props.resultLetters} _onNextClick={this._onNextClick} />
-  }
-
   renderBriggsResult() {
-    return <Briggs resultBriggs={this.props.resultBriggs} />
+    return <Sociotype resultBriggs={this.props.resultBriggs} />
   }
 
   render() {
