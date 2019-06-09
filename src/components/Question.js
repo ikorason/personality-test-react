@@ -26,19 +26,7 @@ class Question extends Component {
       answerOptions: [],
       answer: '',
       answersCount: {
-        Colors: {
-          Green: 10,
-          Brown: 10,
-          Blue: 10,
-          Red: 10
-        },
-        Letters: {
-          A: 10,
-          B: 10,
-          C: 10,
-          D: 10
-        },
-        Briggs: {
+        Socionics: {
           E: 5,
           I: 5,
           S: 5,
@@ -49,9 +37,7 @@ class Question extends Component {
           P: 5
         }
       },
-      resultBriggs: '',
-      resultColors: '',
-      resultLetters: ''
+      resultSocionics: '',
     }
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this)
   }
@@ -70,17 +56,11 @@ class Question extends Component {
     const answersCount = this.state.answersCount
     let applyAnswer = answer => {
       const answer_array = answer.split(',')
-      let briggsAnswer = answer_array[0]
-      let colorsAnswer = answer_array[1]
-      let lettersAnswer = answer_array[2]
+      let SocionicsAnswer = answer_array[0]
       if (answer_array.length === 3) {
-        answersCount['Briggs'][briggsAnswer] += 1
-        answersCount['Colors'][colorsAnswer] += 1
-        answersCount['Letters'][lettersAnswer] += 1
+        answersCount['Socionics'][SocionicsAnswer] += 1
       } else if (answer_array.length === 4) {
-        answersCount['Briggs'][briggsAnswer] -= 1
-        answersCount['Colors'][colorsAnswer] -= 1
-        answersCount['Letters'][lettersAnswer] -= 1
+        answersCount['Socionics'][SocionicsAnswer] -= 1
       }
       return answersCount
     }
@@ -109,32 +89,41 @@ class Question extends Component {
     if (this.state.questionId < quizQuestions.length) {
       setTimeout(() => this.setNextQuestion(), 800)
     } else {
-      setTimeout(() => this.setResults(this.getColorsResults(), this.getLettersResults(), this.getBriggsResults()), 800)
+      setTimeout(() => this.setResults(this.getColorsResults(), this.getLettersResults(), this.getSocionicsResults()), 800)
     }
   }
 
   // ===========================================================================
   //                        get results
   // ===========================================================================
-  getBriggsResults() {
+  getSocionicsResults() {
     const answerCount = this.state.answersCount
-    const briggsAnswer = answerCount['Briggs']
-    const answersCountKeysBriggs = Object.keys(briggsAnswer)
-    const answersCountValuesBriggs = answersCountKeysBriggs.map(key => briggsAnswer[key])
-    let briggsType = ''
-    if (briggsAnswer.E >= briggsAnswer.I) {
-      briggsType += 'E'
-    } else briggsType += 'I'
-    if (briggsAnswer.S >= briggsAnswer.N) {
-      briggsType += 'S'
-    } else briggsType += 'N'
-    if (briggsAnswer.T >= briggsAnswer.F) {
-      briggsType += 'T'
-    } else briggsType += 'F'
-    if (briggsAnswer.J >= briggsAnswer.P) {
-      briggsType += 'J'
-    } else briggsType += 'P'
-    return briggsType
+    const SocionicsAnswer = answerCount['Socionics']
+    const answersCountKeysSocionics = Object.keys(SocionicsAnswer)
+    const answersCountValuesSocionics = answersCountKeysSocionics.map(key => SocionicsAnswer[key])
+    let SocionicsType = ''
+    if (SocionicsAnswer.J >= SocionicsAnswer.P) {
+      if (SocionicsAnswer.T >= SocionicsAnswer.F) {
+        SocionicsType += 'L'
+      } else SocionicsType += 'E'
+      if (SocionicsAnswer.S >= SocionicsAnswer.N) {
+        SocionicsType += 'S'
+      } else SocionicsType += 'I'
+      if (SocionicsAnswer.E >= SocionicsAnswer.I) {
+        SocionicsType += 'E'
+      } else SocionicsType += 'I'
+    } else {
+      if (SocionicsAnswer.S >= SocionicsAnswer.N) {
+        SocionicsType += 'S'
+      } else SocionicsType += 'I'
+      if (SocionicsAnswer.T >= SocionicsAnswer.F) {
+        SocionicsType += 'L'
+      } else SocionicsType += 'E'
+      if (SocionicsAnswer.E >= SocionicsAnswer.I) {
+        SocionicsType += 'E'
+      } else SocionicsType += 'I'
+    }
+    return SocionicsType
   }
 
   getColorsResults() {
@@ -158,15 +147,9 @@ class Question extends Component {
   // ===========================================================================
   //                        set results
   // ===========================================================================
-  setResults(resultColors, resultLetters, resultBriggs) {
-    if (resultColors.length >= 1) {
-      this.setState({ resultColors: resultColors[0] })
-    }
-    if (resultLetters.length >= 1) {
-      this.setState({ resultLetters: resultLetters[0] })
-    }
-    if (resultBriggs.length >= 1) {
-      this.setState({ resultBriggs: resultBriggs })
+  setResults(resultSocionics) {
+    if (resultSocionics.length >= 1) {
+      this.setState({ resultSocionics: resultSocionics })
     }
   }
 
@@ -192,9 +175,7 @@ class Question extends Component {
   renderResult() {
     return (
       <Results
-        resultColors={this.state.resultColors}
-        resultLetters={this.state.resultLetters}
-        resultBriggs={this.state.resultBriggs}
+        resultSocionics={this.state.resultSocionics}
       />
     )
   }
@@ -203,8 +184,8 @@ class Question extends Component {
   //                       render this question page
   // ===========================================================================
   render() {
-    let resultBriggs = this.state.resultBriggs
-    if (resultBriggs) {
+    let resultSocionics = this.state.resultSocionics
+    if (resultSocionics) {
       return this.renderResult()
     }
     return (
