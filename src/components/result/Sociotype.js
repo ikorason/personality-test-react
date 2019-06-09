@@ -39,7 +39,7 @@ class Sociotype extends Component {
       showLSE: false,
       showESE: false,
       showEIE: false,
-      showLIE: false
+      showLIE: false,
     }
     this.onSLI_click = this.onSLI_click.bind(this)
     this.onSEI_click = this.onSEI_click.bind(this)
@@ -332,9 +332,16 @@ class Sociotype extends Component {
             LIE
           </li>
         </ul>
+        <p className="lead" style={{marginTop: 5 + 'em'}}>
+          <a href="https://erscheinung.github.io/sociotype-test/">
+          <button type="button" class="btn btn-outline-dark" style={{color: '#d4cd96'}}>Retake test</button>
+          </a>
+        </p>
+        
       </Wrapper>
     )
   }
+
 
   onSLI_click() {
     let showSLI = this.state.showSLI
