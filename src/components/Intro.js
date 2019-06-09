@@ -34,7 +34,6 @@ const Wrapper = styled.div`
     }
   }
 `
-
 function getIntroMessage() {
   const IntroMessage = [
     'Or try to, for God\'s sake.',
@@ -58,7 +57,7 @@ const Intro = ({ title, _onStartClick }) => {
         <h1>{title}</h1>
         {/* TODO: WILL CHANGE THIS THING DOWN HERE */}
         <ul className="list-group">
-          <li className="list-group-item">Consists of 40 questions</li>
+          <li className="list-group-item">Consists of 30 questions</li>
           <li className="list-group-item">Answer honestly</li>
           <li className="list-group-item">{getIntroMessage()}</li>
         </ul>

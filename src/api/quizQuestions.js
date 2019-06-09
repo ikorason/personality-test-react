@@ -10,262 +10,228 @@ var quizQuestions = [
         content: 'IF I WERE JOHN LENNON!'
       },
       {
-        type: '  ',
+        type: 'secret1',
         content: 'IRRELEVANT'
       },
       {
-        type: '  ',
+        type: 'secret2',
         content: "THIS QUIZ SUCKS ALREADY"
       },
     ]
   },
   // question #2
-  {
-    question: '',
-    answers: [
-      {
-        // briggs, color, letter
-        type: 'N',
-        content: 'YEP! THAT IS ME!'
-      },
-      {
-        type: ' ',
-        content: 'I HAVE NO IDEA!'
-      },
-      {
-        type: 'N,Green,C,No',
-        content: "NAH, THAT CAN'T BE ME!"
-      }
-    ]
-  },
+    {
+      question: 'I learn names insanely fast',
+      answers: [
+        {
+          // briggs, color, letter
+          type: 'F',
+          content: 'HALLOA! THAT\'S ME!'
+        },
+        {
+          type: ' ',
+          content: 'NO IDEA'
+        },
+        {
+          type: 'T',
+          content: "EH, NOT TOO GREAT AT IT"
+        }
+      ]
+    },
   // // question #3
-  // {
-  //   question: 'I like to try things out myself.',
-  //   answers: [
-  //     {
-  //       // briggs, color, letter
-  //       type: 'S,Red,A',
-  //       content: 'YEP! THAT IS ME!'
-  //     },
-  //     {
-  //       type: ' ',
-  //       content: 'I HAVE NO IDEA!'
-  //     },
-  //     {
-  //       type: 'S,Red,A,No',
-  //       content: "NAH, THAT CAN'T BE ME!"
-  //     }
-  //   ]
-  // },
+    {
+      question: 'I like to whine about my life',
+      answers: [
+        {
+          type: 'secret1',
+          content: 'EVERY SINGLE DAY'
+        },
+        {
+          type: ' ',
+          content: 'WHINERS SUCK'
+        },
+        {
+          type: 'secret2',
+          content: "I DON'T HAVE A LIFE"
+        },
+      ]
+    },
   // // question #4
-  // {
-  //   question: "I like to know where I'm going before I leave the house.",
-  //   answers: [
-  //     {
-  //       // briggs, color, letter
-  //       type: 'J,,D',
-  //       content: 'YEP! THAT IS ME!'
-  //     },
-  //     {
-  //       type: ' ',
-  //       content: 'I HAVE NO IDEA!'
-  //     },
-  //     {
-  //       type: 'J,,D,No',
-  //       content: "NAH, THAT CAN'T BE ME!"
-  //     }
-  //   ]
-  // },
+    {
+      question: "I spend energy without thinking",
+      answers: [
+        {
+          type: 'E',
+          content: 'MORE THAN I\'D LIKE TO ADMIT'
+        },
+        {
+          type: ' ',
+          content: 'Can\'t say'
+        },
+        {
+          type: 'I',
+          content: "I DON'T EXHAUST MYSELF THAT MUCH"
+        }
+      ]
+    },
   // // question #5
-  // {
-  //   question: 'I believe there is a logical explanation for everything.',
-  //   answers: [
-  //     {
-  //       // briggs, color, letter
-  //       type: 'T,,C',
-  //       content: 'YEP! THAT IS ME!'
-  //     },
-  //     {
-  //       type: ' ',
-  //       content: 'I HAVE NO IDEA!'
-  //     },
-  //     {
-  //       type: 'T,,C,No',
-  //       content: "NAH, THAT CAN'T BE ME!"
-  //     }
-  //   ]
-  // },
+    {
+      question: 'If necessary, easy to take care of myself',
+      answers: [
+        {
+          type: 'S',
+          content: 'SURE ENOUGH, MAN'
+        },
+        {
+          type: ' ',
+          content: 'NEVER HAD TO'
+        },
+        {
+          type: 'N',
+          content: "WITH GREAT RELUCTANCE, ARRGH"
+        }
+      ]
+    },
   // // question #6
-  // {
-  //   question: 'I tend to keep my social circle small.',
-  //   answers: [
-  //     {
-  //       // briggs, color, letter
-  //       type: 'I,Green,C',
-  //       content: 'YEP! THAT IS ME!'
-  //     },
-  //     {
-  //       type: ' ',
-  //       content: 'I HAVE NO IDEA!'
-  //     },
-  //     {
-  //       type: 'I,Green,C,No',
-  //       content: "NAH, THAT CAN'T BE ME!"
-  //     }
-  //   ]
-  // },
+    {
+      question: 'I\'m quite pleased to tell or show',
+      answers: [
+        {
+          type: 'E',
+          content: 'YUP!'
+        },
+        {
+          type: 'I',
+          content: "MORE CALMER WHEN LISTENING/WATCHING"
+        }
+      ]
+    },
   // // question #7
-  // {
-  //   question: 'I like to share my ideas with others.',
-  //   answers: [
-  //     {
-  //       // briggs, color, letter
-  //       type: 'E,Blue,B',
-  //       content: 'YEP! THAT IS ME!'
-  //     },
-  //     {
-  //       type: ' ',
-  //       content: 'I HAVE NO IDEA!'
-  //     },
-  //     {
-  //       type: 'E,Blue,B,No',
-  //       content: "NAH, THAT CAN'T BE ME!"
-  //     }
-  //   ]
-  // },
+    {
+      question: 'I\'m not a big fan of the Big 5',
+      answers: [
+        {
+          type: 'T',
+          content: 'I NEED A STRONGER CAUSAL BASIS FOR IT'
+        },
+        {
+          type: ' ',
+          content: 'DON\'T KNOW MUCH TO HAVE AN OPINION'
+        },
+      ]
+    },
   // // question #8
-  // {
-  //   question: 'I enjoy using social media.',
-  //   answers: [
-  //     {
-  //       // briggs, color, letter
-  //       type: 'E,Blue,B',
-  //       content: 'YEP! THAT IS ME!'
-  //     },
-  //     {
-  //       type: ' ',
-  //       content: 'I HAVE NO IDEA!'
-  //     },
-  //     {
-  //       type: 'E,Blue,B,No',
-  //       content: "NAH, THAT CAN'T BE ME!"
-  //     }
-  //   ]
-  // },
+    {
+      question: 'I am consistent and reliable',
+      answers: [
+        {
+          // briggs, color, letter
+          type: 'J',
+          content: 'AT THE COST OF SOME FLEXIBILITY'
+        },
+        {
+          type: 'P',
+          content: "RELY MORE ON ADAPTABILITY"
+        }
+      ]
+    },
   // // question #9
-  // {
-  //   question: 'I always express concern for others when making decisions.',
-  //   answers: [
-  //     {
-  //       // briggs, color, letter
-  //       type: 'F,Blue,B',
-  //       content: 'YEP! THAT IS ME!'
-  //     },
-  //     {
-  //       type: ' ',
-  //       content: 'I HAVE NO IDEA!'
-  //     },
-  //     {
-  //       type: 'F,Blue,B,No',
-  //       content: "NAH, THAT CAN'T BE ME!"
-  //     }
-  //   ]
-  // },
+    {
+      question: 'I always express concern for others when making decisions.',
+      answers: [
+        {
+          // briggs, color, letter
+          type: 'F,Blue,B',
+          content: 'YEP! THAT IS ME!'
+        },
+        {
+          type: ' ',
+          content: 'I HAVE NO IDEA!'
+        },
+        {
+          type: 'F,Blue,B,No',
+          content: "NAH, THAT CAN'T BE ME!"
+        }
+      ]
+    },
   // // question #10
-  // {
-  //   question: 'I like to try new things.',
-  //   answers: [
-  //     {
-  //       // briggs, color, letter
-  //       type: 'P,Red,A',
-  //       content: 'YEP! THAT IS ME!'
-  //     },
-  //     {
-  //       type: ' ',
-  //       content: 'I HAVE NO IDEA!'
-  //     },
-  //     {
-  //       type: 'P,Red,A,No',
-  //       content: "NAH, THAT CAN'T BE ME!"
-  //     }
-  //   ]
-  // },
+    {
+      question: 'I ten to work in bursts',
+      answers: [
+        {
+          type: 'P',
+          content: 'OFTEN'
+        },
+        {
+          type: 'J',
+          content: "GENERALLY WORK UNIFORMLY"
+        }
+      ]
+    },
   // // question #11
-  // {
-  //   question: 'I can easily adjust to a change in decision.',
-  //   answers: [
-  //     {
-  //       // briggs, color, letter
-  //       type: 'P,Red,A',
-  //       content: 'YEP! THAT IS ME!'
-  //     },
-  //     {
-  //       type: ' ',
-  //       content: 'I HAVE NO IDEA!'
-  //     },
-  //     {
-  //       type: 'P,Red,A,No',
-  //       content: "NAH, THAT CAN'T BE ME!"
-  //     }
-  //   ]
-  // },
+    {
+      question: 'I think I\'m a \'Feeling\' Type',
+      answers: [
+        {
+          type: 'F',
+          content: 'SOUNDS RIGHT TO ME'
+        },
+        {
+          type: ' ',
+          content: 'UNSURE'
+        },
+        {
+          type: 'T',
+          content: "CAN FEEL, BUT NOT A FEELING TYPE"
+        }
+      ]
+    },
   // // question #12
-  // {
-  //   question: 'I solve problems by working through facts until I understand the problem.',
-  //   answers: [
-  //     {
-  //       // briggs, color, letter
-  //       type: 'S,,C',
-  //       content: 'YEP! THAT IS ME!'
-  //     },
-  //     {
-  //       type: ' ',
-  //       content: 'I HAVE NO IDEA!'
-  //     },
-  //     {
-  //       type: 'S,,C,No',
-  //       content: "NAH, THAT CAN'T BE ME!"
-  //     }
-  //   ]
-  // },
+    {
+      question: 'I keep track of time very well',
+      answers: [
+        {
+          type: 'N',
+          content: 'BETTER THAN MOST'
+        },
+        {
+          type: ' ',
+          content: 'EH, SO-SO'
+        },
+      ]
+    },
   // // question #13
-  // {
-  //   question: 'I rely on logic rather than intuition when making a decision.',
-  //   answers: [
-  //     {
-  //       // briggs, color, letter
-  //       type: 'T,Green,C',
-  //       content: 'YEP! THAT IS ME!'
-  //     },
-  //     {
-  //       type: ' ',
-  //       content: 'I HAVE NO IDEA!'
-  //     },
-  //     {
-  //       type: 'T,Green,C,No',
-  //       content: "NAH, THAT CAN'T BE ME!"
-  //     }
-  //   ]
-  // },
+    {
+      question: 'I tend to have pretty stable moods',
+      answers: [
+        {
+          type: 'J',
+          content: 'PRETTY MUCH, IF YOU DON\'T RUIN IT'
+        },
+        {
+          type: 'P',
+          content: "ACTUALLY QUITE UNSUSTAINABLE"
+        }
+      ]
+    },
   // // question #14
-  // {
-  //   question: 'I make decisions with my heart.',
-  //   answers: [
-  //     {
-  //       // briggs, color, letter
-  //       type: 'F,Blue,B',
-  //       content: 'YEP! THAT IS ME!'
-  //     },
-  //     {
-  //       type: ' ',
-  //       content: 'I HAVE NO IDEA!'
-  //     },
-  //     {
-  //       type: 'F,Blue,B,No',
-  //       content: "NAH, THAT CAN'T BE ME!"
-  //     }
-  //   ]
-  // },
+    {
+      question: 'I am quite interested in philosophy and literature',
+      answers: [
+        {
+          type: 'N',
+          content: ''
+        },
+        {
+          type: ' ',
+          content: 'I HAVE NO IDEA!'
+        },
+        {
+          type: 'F,Blue,B,No',
+          content: "NAH, THAT CAN'T BE ME!"
+        }
+      ]
+    },
   // // question #15
   // {
   //   question: 'I learn best by seeing step by step instructions.',
