@@ -35,6 +35,18 @@ const Wrapper = styled.div`
   }
 `
 
+function getIntroMessage() {
+  const IntroMessage = [
+    'Or try to, for God\'s sake.',
+    'But I know you don\'t have it in you.',
+    'Ha! Silly me, to expect such things from the likes of you.',
+    'Big Brother is watching you.',
+    'Because the cost of lies...is more lies.',
+    'plis.'
+];
+  return IntroMessage[Math.floor(Math.random() * IntroMessage.length)];
+}
+
 const Intro = ({ title, _onStartClick }) => {
   return (
     <Wrapper className="container">
@@ -48,7 +60,7 @@ const Intro = ({ title, _onStartClick }) => {
         <ul className="list-group">
           <li className="list-group-item">Consists of 40 questions</li>
           <li className="list-group-item">Answer honestly</li>
-          <li className="list-group-item">Or try to,  for god's sake</li>
+          <li className="list-group-item">{getIntroMessage()}</li>
         </ul>
         <StartBtn onClick={_onStartClick}>
           <span>Start lying</span>
