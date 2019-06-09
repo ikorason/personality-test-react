@@ -1,4 +1,4 @@
-# Sociotype Personality Test
+# Socionics Personality Test
 
 
 Socionics version of the personality test.
