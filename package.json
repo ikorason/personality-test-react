@@ -1,5 +1,5 @@
 {
-  "name": "personality_test",
+  "name": "sociotype-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -29,7 +29,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://irfanabliz.github.io/personality-test-react",
+  "homepage": "https://Erscheinung.github.io/sociotype-test",
   "devDependencies": {
     "gh-pages": "^1.0.0"
   }
