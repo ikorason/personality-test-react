@@ -37,7 +37,7 @@ class Question extends Component {
           P: 5
         }
       },
-      resultSocionics: '',
+      resultSociotype: '',
     }
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this)
   }
@@ -89,7 +89,7 @@ class Question extends Component {
     if (this.state.questionId < quizQuestions.length) {
       setTimeout(() => this.setNextQuestion(), 800)
     } else {
-      setTimeout(() => this.setResults(this.getColorsResults(), this.getLettersResults(), this.getSocionicsResults()), 800)
+      setTimeout(() => this.setResults(this.getSocionicsResults()), 800)
     }
   }
 
@@ -102,7 +102,10 @@ class Question extends Component {
     const answersCountKeysSocionics = Object.keys(SocionicsAnswer)
     const answersCountValuesSocionics = answersCountKeysSocionics.map(key => SocionicsAnswer[key])
     let SocionicsType = ''
-    if (SocionicsAnswer.J >= SocionicsAnswer.P) {
+    let SocionicsType1 = ''
+    let SocionicsType2 = ''
+
+    if (SocionicsAnswer.J > SocionicsAnswer.P) {
       if (SocionicsAnswer.T >= SocionicsAnswer.F) {
         SocionicsType += 'L'
       } else SocionicsType += 'E'
@@ -112,7 +115,9 @@ class Question extends Component {
       if (SocionicsAnswer.E >= SocionicsAnswer.I) {
         SocionicsType += 'E'
       } else SocionicsType += 'I'
-    } else {
+      SocionicsType1 = SocionicsType
+
+    } else if (SocionicsAnswer.P > SocionicsAnswer.J) {
       if (SocionicsAnswer.S >= SocionicsAnswer.N) {
         SocionicsType += 'S'
       } else SocionicsType += 'I'
@@ -122,34 +127,20 @@ class Question extends Component {
       if (SocionicsAnswer.E >= SocionicsAnswer.I) {
         SocionicsType += 'E'
       } else SocionicsType += 'I'
+      SocionicsType2 = SocionicsType
+    }
+    else {
+      SocionicsType = SocionicsType1 + "/" + SocionicsType2
     }
     return SocionicsType
-  }
-
-  getColorsResults() {
-    const answersCount = this.state.answersCount
-    const colorsAnswer = answersCount['Colors']
-    const answersCountKeysColors = Object.keys(colorsAnswer)
-    const answersCountValuesColors = answersCountKeysColors.map(key => colorsAnswer[key])
-    const maxAnswerCountColors = Math.max.apply(null, answersCountValuesColors)
-    return answersCountKeysColors.filter(key => colorsAnswer[key] === maxAnswerCountColors)
-  }
-
-  getLettersResults() {
-    const answersCount = this.state.answersCount
-    const lettersAnswer = answersCount['Letters']
-    const answersCountKeysLetters = Object.keys(lettersAnswer)
-    const answersCountValuesLetters = answersCountKeysLetters.map(key => lettersAnswer[key])
-    const maxAnswerCountLetters = Math.max.apply(null, answersCountValuesLetters)
-    return answersCountKeysLetters.filter(key => lettersAnswer[key] === maxAnswerCountLetters)
   }
 
   // ===========================================================================
   //                        set results
   // ===========================================================================
-  setResults(resultSocionics) {
-    if (resultSocionics.length >= 1) {
-      this.setState({ resultSocionics: resultSocionics })
+  setResults(resultSociotype) {
+    if (resultSociotype.length >= 1) {
+      this.setState({ resultSociotype: resultSociotype })
     }
   }
 
@@ -175,7 +166,7 @@ class Question extends Component {
   renderResult() {
     return (
       <Results
-        resultSocionics={this.state.resultSocionics}
+        resultSociotype={this.state.resultSociotype}
       />
     )
   }
@@ -184,8 +175,8 @@ class Question extends Component {
   //                       render this question page
   // ===========================================================================
   render() {
-    let resultSocionics = this.state.resultSocionics
-    if (resultSocionics) {
+    let resultSociotype = this.state.resultSociotype
+    if (resultSociotype) {
       return this.renderResult()
     }
     return (

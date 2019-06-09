@@ -273,7 +273,7 @@ class Sociotype extends Component {
       <Wrapper>
         <h1 className="display-3 title">Sociotype Result</h1>
         <hr className="my-4" />
-        <h2 className="display-6 resultTxt">{this.props.resultSociotypes}</h2>
+        <h2 className="display-6 resultTxt">{this.props.resultSociotype}</h2>
         <hr className="my-5" />
         <p className="lead">What does this result mean?</p>
         <ul className="list-group briggs">
@@ -418,7 +418,7 @@ class Sociotype extends Component {
 }
 
 Sociotype.PropTypes = {
-  resultSociotypes: PropTypes.string.isRequired
+  resultSociotype: PropTypes.string.isRequired
 }
 
 export default Sociotype
