@@ -27,14 +27,16 @@ class Question extends Component {
       answer: '',
       answersCount: {
         Socionics: {
-          E: 5,
-          I: 5,
-          S: 5,
-          N: 5,
-          T: 5,
-          F: 5,
-          J: 5,
-          P: 5
+          E: 3,
+          I: 3,
+          S: 3,
+          N: 3,
+          T: 3,
+          F: 3,
+          J: 3,
+          P: 3,
+          secret1: 6,
+          secret2: 6
         }
       },
       resultSociotype: '',
@@ -96,6 +98,8 @@ class Question extends Component {
   // ===========================================================================
   //                        get results
   // ===========================================================================
+
+
   getSocionicsResults() {
     const answerCount = this.state.answersCount
     const SocionicsAnswer = answerCount['Socionics']
@@ -106,35 +110,47 @@ class Question extends Component {
     let SocionicsType2 = ''
 
     if (SocionicsAnswer.J > SocionicsAnswer.P) {
-      if (SocionicsAnswer.T >= SocionicsAnswer.F) {
-        SocionicsType += 'L'
-      } else SocionicsType += 'E'
-      if (SocionicsAnswer.S >= SocionicsAnswer.N) {
-        SocionicsType += 'S'
-      } else SocionicsType += 'I'
-      if (SocionicsAnswer.E >= SocionicsAnswer.I) {
-        SocionicsType += 'E'
-      } else SocionicsType += 'I'
-      SocionicsType1 = SocionicsType
+      if (SocionicsAnswer.T > SocionicsAnswer.F)
+        SocionicsType1 += 'L'
+      else
+        SocionicsType1 += 'E'
 
-    } else if (SocionicsAnswer.P > SocionicsAnswer.J) {
-      if (SocionicsAnswer.S >= SocionicsAnswer.N) {
-        SocionicsType += 'S'
-      } else SocionicsType += 'I'
-      if (SocionicsAnswer.T >= SocionicsAnswer.F) {
-        SocionicsType += 'L'
-      } else SocionicsType += 'E'
-      if (SocionicsAnswer.E >= SocionicsAnswer.I) {
-        SocionicsType += 'E'
-      } else SocionicsType += 'I'
-      SocionicsType2 = SocionicsType
-    }
-    else {
-      SocionicsType = SocionicsType1 + "/" + SocionicsType2
-    }
+
+      if (SocionicsAnswer.S > SocionicsAnswer.N) {
+        SocionicsType1 += 'S'
+      } else 
+        SocionicsType1 += 'I'
+
+      if (SocionicsAnswer.E > SocionicsAnswer.I) {
+        SocionicsType1 += 'E'
+      } else 
+        SocionicsType1 += 'I'
+
+      SocionicsType += SocionicsType1
+    } 
+      
+    else if (SocionicsAnswer.P >= SocionicsAnswer.J) {
+
+      if (SocionicsAnswer.S > SocionicsAnswer.N) {
+        SocionicsType2 += 'S'
+      } else 
+        SocionicsType2 += 'I'
+       
+      if (SocionicsAnswer.T > SocionicsAnswer.F)
+        SocionicsType2 += 'L'
+      else 
+        SocionicsType2 += 'E'
+           
+      if (SocionicsAnswer.E > SocionicsAnswer.I) {
+        SocionicsType2 += 'E'
+      } else 
+        SocionicsType2 += 'I'
+      
+      SocionicsType += SocionicsType2;
+      }
+
     return SocionicsType
   }
-
   // ===========================================================================
   //                        set results
   // ===========================================================================
