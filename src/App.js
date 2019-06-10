@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import anime from 'animejs'
 import Intro from './components/Intro'
 import Question from './components/Question'
+import Sound from 'react-sound'
 
 class App extends Component {
   constructor(props) {
