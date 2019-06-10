@@ -57,13 +57,9 @@ class Question extends Component {
   setUserAnswer(answer) {
     const answersCount = this.state.answersCount
     let applyAnswer = answer => {
-      const answer_array = answer.split(',')
+      const answer_array = answer
       let SocionicsAnswer = answer_array[0]
-      if (answer_array.length === 3) {
-        answersCount['Socionics'][SocionicsAnswer] += 1
-      } else if (answer_array.length === 4) {
-        answersCount['Socionics'][SocionicsAnswer] -= 1
-      }
+      answersCount['Socionics'][SocionicsAnswer] += 1
       return answersCount
     }
     this.setState({
