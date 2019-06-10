@@ -131,26 +131,22 @@ var quizQuestions = [
         },
         {
           type: 'P',
-          content: "RELY MORE ON ADAPTABILITY"
+          content: "RELY MORE OFTEN ON ADAPTABILITY"
         }
       ]
     },
   // // question #9
     {
-      question: 'I always express concern for others when making decisions.',
+      question: 'The extent of my activities',
       answers: [
         {
           // briggs, color, letter
-          type: 'F,Blue,B',
-          content: 'YEP! THAT IS ME!'
+          type: 'E',
+          content: 'GROWS IN WIDTH'
         },
         {
-          type: ' ',
-          content: 'I HAVE NO IDEA!'
-        },
-        {
-          type: 'F,Blue,B,No',
-          content: "NAH, THAT CAN'T BE ME!"
+          type: 'I',
+          content: "GROWS IN DEPTH"
         }
       ]
     },
@@ -220,14 +216,10 @@ var quizQuestions = [
       answers: [
         {
           type: 'N',
-          content: ''
+          content: 'TRUE ENOUGH'
         },
         {
           type: ' ',
-          content: 'I HAVE NO IDEA!'
-        },
-        {
-          type: 'F,Blue,B,No',
           content: "NAH, THAT CAN'T BE ME!"
         }
       ]

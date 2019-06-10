@@ -42,8 +42,16 @@ function getIntroMessage() {
     'Big Brother is watching you.',
     'Because the cost of lies...is more lies.',
     'plis.'
-];
+  ];
   return IntroMessage[Math.floor(Math.random() * IntroMessage.length)];
+}
+
+function getLyingVariations() {
+  const Lying = [
+    'Lying',
+    'Fibbing',
+  ];
+  return Lying[Math.floor(Math.random() * Lying.length)];
 }
 
 const Intro = ({ title, _onStartClick }) => {
@@ -58,11 +66,11 @@ const Intro = ({ title, _onStartClick }) => {
         {/* TODO: WILL CHANGE THIS THING DOWN HERE */}
         <ul className="list-group">
           <li className="list-group-item">Consists of 30 questions</li>
-          <li className="list-group-item">Answer honestly</li>
+          <li className="list-group-item">Answer HONESTLY, and choose the option matching how you GENERALLY are </li>
           <li className="list-group-item">{getIntroMessage()}</li>
         </ul>
         <StartBtn onClick={_onStartClick}>
-          <span>Start lying</span>
+          <span>Start {getLyingVariations()}</span>
           <div className="icon">
             <i className="fa fa-arrow-right" />
           </div>

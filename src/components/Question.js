@@ -59,6 +59,7 @@ class Question extends Component {
     let applyAnswer = answer => {
       const answer_array = answer
       let SocionicsAnswer = answer_array[0]
+      // if(SocionicsAnswer != 'Process' || SocionicsAnswer != 'Result')
       answersCount['Socionics'][SocionicsAnswer] += 1
       return answersCount
     }
