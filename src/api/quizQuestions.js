@@ -5,7 +5,6 @@ var quizQuestions = [
     question: 'Must One Imagine Sisyphus happy?',
     answers: [
       {
-        // briggs, color, letter
         type: ' ',
         content: 'IF I WERE JOHN LENNON!'
       },
@@ -24,7 +23,6 @@ var quizQuestions = [
       question: 'I learn names pretty quickly',
       answers: [
         {
-          // briggs, color, letter
           type: 'F',
           content: 'SOUNDS RIGHT'
         },
