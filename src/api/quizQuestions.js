@@ -21,16 +21,20 @@ var quizQuestions = [
   },
   // question #2
     {
-      question: 'I learn names insanely fast',
+      question: 'I learn names pretty quickly',
       answers: [
         {
           // briggs, color, letter
           type: 'F',
-          content: 'HALLOA! THAT\'S ME!'
+          content: 'SOUNDS RIGHT'
+        },
+        {
+          type: 'F, Negative',
+          content: "EH, NOT TOO GREAT AT IT"
         },
         {
           type: 'T',
-          content: "EH, NOT TOO GREAT AT IT"
+          content: "SUCK AT IT"
         }
       ]
     },
