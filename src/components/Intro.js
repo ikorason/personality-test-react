@@ -34,17 +34,17 @@ const Wrapper = styled.div`
     }
   }
 `
-function getIntroMessage() {
-  const IntroMessage = [
-    'Or try to, for God\'s sake.',
-    'But I know you don\'t have it in you.',
-    'Ha! Silly me, to expect such things from the likes of you.',
-    'Big Brother is watching you.',
-    'Because the cost of lies...is more lies.',
-    'plis.'
-  ];
-  return IntroMessage[Math.floor(Math.random() * IntroMessage.length)];
-}
+// function getIntroMessage() {
+//   const IntroMessage = [
+//     'Or try to, for God\'s sake.',
+//     'But I know you don\'t have it in you.',
+//     'Ha! Silly me, to expect such things from the likes of you.',
+//     'Big Brother is watching you.',
+//     'Because the cost of lies...is more lies.',
+//     'plis.'
+//   ];
+//   return IntroMessage[Math.floor(Math.random() * IntroMessage.length)];
+// }
 
 function getLyingVariations() {
   const Lying = [
@@ -68,7 +68,7 @@ const Intro = ({ title, _onStartClick }) => {
           <li className="list-group-item">Consists of 30 questions</li>
           <li className="list-group-item">Answer HONESTLY, and choose the option matching how you GENERALLY are </li>
         </ul>
-        <StartBtn onClick={_onStartClick}>
+        <StartBtn onClick={_onStartClick} style={{cursor:'pointer'}}>
           <span>Start {getLyingVariations()}</span>
           <div className="icon">
             <i className="fa fa-arrow-right" />
