@@ -142,7 +142,7 @@ var quizQuestions = [
     },
   // // question #10
     {
-      question: 'I ten to work in bursts',
+      question: 'I tend to work in bursts',
       answers: [
         {
           type: 'P',
