@@ -63,7 +63,7 @@ class Sociotype extends Component {
     return (
       <SLI
         title={'Introvert | Sensing | Logic | Rational'}
-        content={``}
+        content={`Sensing Logical Introvert`}
         onBackClick={this.onSLI_click}
       />
     )
@@ -73,7 +73,7 @@ class Sociotype extends Component {
     return (
       <SEI
         title={'Introvert | Sensing | Ethics | Rational'}
-        content={``}
+        content={`Sensing Ethical Introvert`}
         onBackClick={this.onSEI_click}
       />
     )
@@ -82,8 +82,8 @@ class Sociotype extends Component {
   renderIEI() {
     return (
       <IEI
-        title={'Introvert | iNtuitive | Ethics | Rational'}
-        content={``}
+        title={'Introvert | Intuitive | Ethics | Rational'}
+        content={`Intuitive Ethical Introver`}
         onBackClick={this.onIEI_click}
       />
     )
@@ -92,8 +92,8 @@ class Sociotype extends Component {
   renderILI() {
     return (
       <ILI
-        title={'Introvert | iNtuitive | Logic | Rational'}
-        content={``}
+        title={'Introvert | Intuitive | Logic | Rational'}
+        content={`Intuitive Logical Introvert`}
         onBackClick={this.onILI_click}
       />
     )
@@ -103,7 +103,7 @@ class Sociotype extends Component {
     return (
       <LSI
         title={'Introvert | Sensing | Logic | Irrational'}
-        content={``}
+        content={`Logical Sensing Introvert`}
         onBackClick={this.onLSI_click}
       />
     )
@@ -113,7 +113,7 @@ class Sociotype extends Component {
     return (
       <ESI
         title={'Introvert | Sensing | Ethics | Irrational'}
-        content={``}
+        content={`Ethical Sensing Introvert`}
         onBackClick={this.onESI_click}
       />
     )
@@ -122,8 +122,8 @@ class Sociotype extends Component {
   renderEII() {
     return (
       <EII
-        title={'Introvert | iNtuitive | Ethics | Irrational'}
-        content={``}
+        title={'Introvert | Intuitive | Ethics | Irrational'}
+        content={`Ethical Intuitive Introvert`}
         onBackClick={this.onEII_click}
       />
     )
@@ -132,8 +132,8 @@ class Sociotype extends Component {
   renderLII() {
     return (
       <LII
-        title={'Introvert | iNtuitive | Logic | Irrational'}
-        content={``}
+        title={'Introvert | Intuitive | Logic | Irrational'}
+        content={`Logical Intuitive Introvert`}
         onBackClick={this.onLII_click}
       />
     )
@@ -143,7 +143,7 @@ class Sociotype extends Component {
     return (
       <SLE
         title={'Extravert | Sensing | Logic | Irrational'}
-        content={``}
+        content={`Sensing Logical Extravert`}
         onBackClick={this.onSLE_click}
       />
     )
@@ -153,7 +153,7 @@ class Sociotype extends Component {
     return (
       <SEE
         title={'Extravert | Sensing | Ethics | Irrational'}
-        content={``}
+        content={`Sensing Ethical Extravert`}
         onBackClick={this.onSEE_click}
       />
     )
@@ -162,8 +162,8 @@ class Sociotype extends Component {
   renderIEE() {
     return (
       <IEE
-        title={'Extravert | iNtuitive | Ethics | Irrational'}
-        content={``}
+        title={'Extravert | Intuitive | Ethics | Irrational'}
+        content={`Intuitive Ethical Extravert`}
         onBackClick={this.onIEE_click}
       />
     )
@@ -172,8 +172,8 @@ class Sociotype extends Component {
   renderILE() {
     return (
       <ILE
-        title={'Extravert | iNtuitive | Logic | Irrational'}
-        content={``}
+        title={'Extravert | Intuitive | Logic | Irrational'}
+        content={`Intuitive Logical Extravert`}
         onBackClick={this.onILE_click}
       />
     )
@@ -183,7 +183,7 @@ class Sociotype extends Component {
     return (
       <LSE
         title={'Extravert | Sensing | Logic | Rational'}
-        content={``}
+        content={`Logical Sensing Extravert`}
         onBackClick={this.onLSE_click}
       />
     )
@@ -193,7 +193,7 @@ class Sociotype extends Component {
     return (
       <ESE
         title={'Extravert | Sensing | Ethics | Rational'}
-        content={``}
+        content={`Ethical Sensing Extravert`}
         onBackClick={this.onESE_click}
       />
     )
@@ -202,8 +202,8 @@ class Sociotype extends Component {
   renderEIE() {
     return (
       <EIE
-        title={'Extravert | iNtuitive | Ethics | Rational'}
-        content={``}
+        title={'Extravert | Intuitive | Ethics | Rational'}
+        content={`Ethical Intuitive Extravert`}
         onBackClick={this.onEIE_click}
       />
     )
@@ -212,8 +212,8 @@ class Sociotype extends Component {
   renderLIE() {
     return (
       <LIE
-        title={'Extravert | iNtuitive | Logic | Rational'}
-        content={``}
+        title={'Extravert | Intuitive | Logic | Rational'}
+        content={`Logical Intuitive Extravert`}
         onBackClick={this.onLIE_click}
       />
     )
