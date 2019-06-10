@@ -254,7 +254,7 @@ var quizQuestions = [
         },
         {
           type: 'P',
-          content: "WHO DOESN\'T? BUT I\'M QUITE FLEXIBLE"
+          content: "WHO DOESN'T? BUT I'M QUITE FLEXIBLE"
         }
       ]
     },
@@ -440,7 +440,7 @@ var quizQuestions = [
         },
         {
           type: 'J',
-          content: "DON\'T ALWAYS GET MY WAY BUT TRY HARD TO"
+          content: "DON'T ALWAYS GET MY WAY BUT TRY HARD TO"
         }
       ]
     },
@@ -476,7 +476,7 @@ var quizQuestions = [
         },
         {
           type: 'S',
-          content: "YES, AND DOESN\'T MEAN I DON\'T HAVE AN IMAGINATION"
+          content: "YES, AND DOESN'T MEAN I DON'T HAVE AN IMAGINATION"
         }
       ]
     },

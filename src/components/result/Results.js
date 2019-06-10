@@ -23,6 +23,11 @@ class Results extends Component {
 
   _onNextClick() {
     let showSociotypeResult = this.state.showSociotypeResult
+    setTimeout(() => {
+      this.setState({
+        showSociotypeResult: showSociotypeResult
+      })
+    },800)
   }
 }
 

@@ -35,8 +35,8 @@ class Question extends Component {
           F: 3,
           J: 3,
           P: 3,
-          secret1: 6,
-          secret2: 6
+          secret1: 3,
+          secret2: 3
         }
       },
       resultSociotype: '',
@@ -57,10 +57,13 @@ class Question extends Component {
   setUserAnswer(answer) {
     const answersCount = this.state.answersCount
     let applyAnswer = answer => {
-      const answer_array = answer
+      const answer_array = answer.split(',')
       let SocionicsAnswer = answer_array[0]
+      if(SocionicsAnswer.length === 1)
       // if(SocionicsAnswer != 'Process' || SocionicsAnswer != 'Result')
-      answersCount['Socionics'][SocionicsAnswer] += 1
+        answersCount['Socionics'][SocionicsAnswer] += 1
+      else
+        answersCount['Socionics'][SocionicsAnswer] -= 1
       return answersCount
     }
     this.setState({

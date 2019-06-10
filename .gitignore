@@ -31,5 +31,4 @@ chrome-user-data
 *.swo
 *react*min*.js
 !src/node_modules
-
 sociotype-test.code-workspace

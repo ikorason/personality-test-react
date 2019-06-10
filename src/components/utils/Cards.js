@@ -52,7 +52,7 @@ export const QuestionCard = styled.div.attrs({
   className: 'card'
 })`
   position: relative;
-  width: 1%;
+  width: 100%;
   margin: 0 auto;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   background: ${colors.$colorCardBg};

@@ -67,7 +67,6 @@ const Intro = ({ title, _onStartClick }) => {
         <ul className="list-group">
           <li className="list-group-item">Consists of 30 questions</li>
           <li className="list-group-item">Answer HONESTLY, and choose the option matching how you GENERALLY are </li>
-          <li className="list-group-item">{getIntroMessage()}</li>
         </ul>
         <StartBtn onClick={_onStartClick}>
           <span>Start {getLyingVariations()}</span>
