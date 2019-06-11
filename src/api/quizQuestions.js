@@ -101,13 +101,16 @@ var quizQuestions = [
       question: 'I\'m not a big fan of the Big 5',
       answers: [
         {
-          type: 'T',
+          type: 'F, Negative',
           content: 'I NEED A STRONGER CAUSAL BASIS FOR IT'
         },
         {
           type: ' ',
           content: 'DON\'T KNOW MUCH TO HAVE AN OPINION'
         },
+        {
+          type: 'T',
+          content: 'DISAGREE'
       ]
     },
   // // question #8
