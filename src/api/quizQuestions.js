@@ -111,6 +111,7 @@ var quizQuestions = [
         {
           type: 'T',
           content: 'DISAGREE'
+        }
       ]
     },
   // // question #8

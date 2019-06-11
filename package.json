@@ -11,6 +11,7 @@
     "react-modal": "^3.0.3",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
+    "react-sound": "^1.2.0",
     "recharts": "^1.0.0-alpha.6",
     "styled-components": "^2.2.0"
   },
