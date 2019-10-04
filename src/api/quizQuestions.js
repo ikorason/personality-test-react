@@ -310,24 +310,8 @@ var quizQuestions = [
         }
       ]
     },
-  // // question #21
-    {
-      question: 'I like to share my feelings with others.',
-      answers: [
-        {
-          type: 'T, Negative',
-          content: 'YEAH, I AM QUITE AN OPEN PERSON'
-        },
-        {
-          type: ' ',
-          content: 'UMM...NOT REALLY'
-        },
-        {
-          type: 'F',
-          content: "HMM, AT LEAST I'M QUITE EXPRESSIVE"
-        }
-      ]
-    },
+  // // question #21 MISSING : T/F
+
   // // question #22
     {
       question: 'If things unclear, actively seek more information',
@@ -337,12 +321,8 @@ var quizQuestions = [
           content: 'I TEND TO BE ON THE SAFER SIDE'
         },
         {
-          type: 'N',
-          content: "AND/OR TRY TO FILL IN THE BLANKS"
-        },
-        {
           type: 'N,Negative',
-          content: 'CAN SPECULATE, BUT UNWISE TO GO TOO FAR'
+          content: 'RELATIVELY COMFORTABLE WITH AMBIGUITY '
         },
       ]
     },
@@ -385,10 +365,6 @@ var quizQuestions = [
         {
           type: 'S',
           content: 'WEIRD QUESTION, BUT YEAH.'
-        },
-        {
-          type: 'N,Negative',
-          content: "USUALLY 'WELL GROOMED'"
         },
         {
           type: 'N',
@@ -444,10 +420,6 @@ var quizQuestions = [
           type: 'P,Negative',
           content: 'NOT THAT OFTEN'
         },
-        {
-          type: 'J',
-          content: "DON'T ALWAYS GET MY WAY BUT TRY HARD TO"
-        }
       ]
     },
   // // question #29
@@ -470,20 +442,16 @@ var quizQuestions = [
     },
   // // question #30
     {
-      question: 'I am a practically oriented person',
+      question: "I'm not skinny",
       answers: [
         {
-          type: 'N, Negative',
-          content: 'NOT A DAYDREAMER AT LEAST'
+          type: 'E',
+          content: "SHAMEFULLY AGREE" 
         },
         {
-          type: 'S, Negative',
-          content: 'NONSENSE'
+          type: 'I',
+          content: "I'M QUITE SKINNY"
         },
-        {
-          type: 'S',
-          content: "YES, AND DOESN'T MEAN I DON'T HAVE AN IMAGINATION"
-        }
       ]
     },
 ]
