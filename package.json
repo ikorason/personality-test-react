@@ -11,7 +11,7 @@
     "react-modal": "^3.0.3",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
-    "recharts": "^1.0.0-alpha.6",
+    "recharts": "^2.1.14",
     "styled-components": "^2.2.0"
   },
   "lint-staged": {
